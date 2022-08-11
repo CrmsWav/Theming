@@ -15,6 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@theming/articles/domain": ["libs/articles/domain/src/index.ts"],
+      "@theming/articles/entity": ["libs/articles/entity/src/index.ts"],
+      "@theming/articles/gateway": ["libs/articles/gateway/src/index.ts"],
+      "@theming/articles/presenter": ["libs/articles/presenter/src/index.ts"],
+      "@theming/articles/repository": ["libs/articles/repository/src/index.ts"],
       "@theming/ui": ["libs/ui/src/index.ts"]
     }
   },

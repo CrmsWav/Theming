@@ -2,6 +2,11 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "articles-domain": "libs/articles/domain",
+    "articles-entity": "libs/articles/entity",
+    "articles-gateway": "libs/articles/gateway",
+    "articles-presenter": "libs/articles/presenter",
+    "articles-repository": "libs/articles/repository",
     "ssg": "apps/ssg",
     "ssg-e2e": "apps/ssg-e2e",
     "ssr": "apps/ssr",

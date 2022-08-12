@@ -1,3 +1,5 @@
-export function articlesEntity(): string {
-  return 'articles-entity';
+export interface PostEntity {
+  id: number;
+  title: string;
+  body: string;
 }

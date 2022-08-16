@@ -13,10 +13,10 @@ export default function Index({ data }) {
 }
 
 export async function getServerSideProps() {
-  return articlesRepository().getAll().then(articles => {
+  return articlesRepository().getAll().then(data => {
     return {
       props: {
-        data: articles
+        data: data
       }
     }
   })

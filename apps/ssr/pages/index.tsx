@@ -2,12 +2,10 @@ import * as React from 'react';
 import {articlesRepository} from "@theming/articles/repository";
 import PostsList from "../../../libs/ui/src/lib/posts-list/posts-list";
 
-export default function Index({ data }) {
-  // console.log("data -> ", data);
-
+export default function Index({ posts }) {
   return (
     <div>
-      <PostsList data={data} />
+      <PostsList posts={posts} />
     </div>
   )
 }
@@ -16,7 +14,7 @@ export async function getServerSideProps() {
   return articlesRepository().getAll().then(data => {
     return {
       props: {
-        data: data
+        posts: data
       }
     }
   })

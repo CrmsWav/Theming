@@ -1,6 +1,6 @@
-import styled from 'styled-components';
 import * as React from "react";
 import {PostEntity} from "@theming/articles/entity";
+import Link from "next/link";
 
 type propsType = {
   data: PostEntity[]
@@ -12,9 +12,11 @@ export default function PostsList(props: propsType) {
     <div>
       <h1>Posts List</h1>
       <ul>
-        {props.data.map(article => (
-          <li key={article.id}>
-            <a href={`/articles/${article.id}`}>{article.title}</a>
+        {props.data.map(post => (
+          <li key={post.id}>
+            <Link href={{pathname: '/detailPost/[id]', query: {id: post.id}}}>
+              <a>{post.title}</a>
+            </Link>
           </li>
         ))}
       </ul>

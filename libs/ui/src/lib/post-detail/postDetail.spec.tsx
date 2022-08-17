@@ -4,7 +4,7 @@ import PostDetail from './postDetail';
 
 describe('PostDetail', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<PostDetail id={post.id} title={post.title} body={post.body} />);
+    const { baseElement } = render(<PostDetail id={1} title="toto" body="ee" />);
     expect(baseElement).toBeTruthy();
   });
 });

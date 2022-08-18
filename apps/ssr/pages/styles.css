@@ -27,8 +27,8 @@ body {
 }
 
 .postFromPostDetail{
-  border: black solid 5px;
   border-radius: 20px;
+  box-shadow: black 5px 5px 10px 0;
   list-style: none;
   margin: 20px 20%;
   padding: 5%;
@@ -44,6 +44,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .titleFromPostDetail{
   font-family: 'Roboto', sans-serif;
   font-size: xxx-large;

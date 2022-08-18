@@ -42,12 +42,12 @@ const List = styled.ul`
 `;
 
 const Post = styled.li`
-  border: black solid 3px;
   border-radius: 10px;
+  box-shadow: black 5px 5px 10px 0;
   list-style: none;
   margin: 1% 20%;
   padding: 2% 5%;
-  background-color: #676767;
+  background-color: #606060;
   width: 60%;
   max-height: min-content;
 
